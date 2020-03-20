@@ -10,6 +10,6 @@ namespace :greeting do
   end
 end
 
-task :console => :environment
+task :console => :environment do
   Pry.start
 end
