@@ -13,3 +13,16 @@ end
 task :console => :environment do
   Pry.start
 end
+
+namespace :db do
+  
+  task :migrate => :environment do
+    Student.create_table
+  end
+  
+  task :seed do
+    require_relative ''
+  end
+end
+
+
