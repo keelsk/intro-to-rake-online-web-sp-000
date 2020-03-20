@@ -21,7 +21,7 @@ namespace :db do
   end
   
   task :seed do
-    require_relative ''
+    require_relative './db/seeds.db'
   end
 end
 
